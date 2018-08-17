@@ -1,0 +1,381 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+ /*Szerokosc kolumn*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/*Przesuniecie kolumn*/
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+[class*="col"] {
+	float: left;
+	margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+/*LAYOUT*/
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.row::before, .row::after {
+    content: "";
+    display: grid;
+}
+.row::after {
+	clear: both;	
+}
+.row {
+		
+}
+header {
+	background-color: #313234;
+	height: 50px;
+	background-color: rgba(0.0.0 0.5);
+}
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+header > nav img {
+	padding: 10px 0;
+}
+header > nav ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+header > nav ul > li {
+	display: inline-block;
+}
+header > nav ul > li > a {
+	line-height: 50px;
+	display: block;
+	color: #fff;
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+header > nav ul > li > a:hover {
+	background: #ccc;
+}
+/* Sekcja powitalna */
+.hero {
+	background: url("https://images.unsplash.com/photo-1516233074716-992e90fe18f8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=daa13bc3a15271877dd1f2e9a7c2a2a5&auto=format&fit=crop&w=967&q=80") center center/cover no-repeat;
+	padding:  250px 0;
+}
+.slogan {
+	background: rgba(1,1,1, 0.5);
+	width: 100%;
+	max-width: 800px;
+ 	position: relative;
+	float: right;
+}
+.slogan h1 {
+	font-family: 'Bree Serif', serif;
+	font-size: 28px;
+	color: #fff;
+	padding: 0 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+/* Sekcja korzysci */
+section>.container {
+	margin: 50px auto;
+}
+.gain {
+	background-color: #fff;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.icon {
+	font-size: 50px;
+	text-align: center;
+	display: block;
+	line-height: 100px;
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	background: #efefef;
+	margin: 0 auto 30px auto;
+}
+.icon:hover {
+	transform: scale(1.10);
+	background: #c8d6e5;
+}
+.row p, h5 {
+	text-align: center;
+	margin: 0 30px;
+}
+.row h5 {
+	font-size: 20px;
+}
+.row h4 {
+	font-size: 25px;
+	text-align: center;
+	position: relative;
+	top: 40px;
+}
+.pic-1 {
+	background-image: url("https://images.unsplash.com/photo-1508921234172-b68ed335b3e6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=92e40b3819e4c173debf1500f27c9b60&auto=format&fit=crop&w=600&q=60");	
+}
+.pic-2 {
+	background-image: url("https://images.unsplash.com/reserve/wi9yf7kTQxCNeY72cCY6_Images%20of%20Jenny%20Lace%20Plasticity%20Publish%20(4%20of%2025).jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c65e083dd5d4c3fb3208ea301c63e30&auto=format&fit=crop&w=600&q=60");	
+}
+.pic-3 {
+	background-image: url("https://images.unsplash.com/photo-1461988625982-7e46a099bf4f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=302620934194d8f35a2f6e5a12de3fb2&auto=format&fit=crop&w=600&q=60");	
+}
+.pic-4 {
+	background-image: url("https://images.unsplash.com/photo-1441109296207-fd911f7cd5e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5b957fcae8c80fc69d72edb2c3b5a41a&auto=format&fit=crop&w=600&q=60");	
+}
+.pic-5 {
+	background-image: url("https://images.unsplash.com/photo-1495734047368-b939bcbc93fb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3a74129bfc3c343e2b6637e1d538ec88&auto=format&fit=crop&w=600&q=60");	
+}
+.pic-6 {
+	background-image: url("https://images.unsplash.com/photo-1505327191481-d31e1fb4ff79?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fc7b942f2d4048e5c43cc1e3daebf417&auto=format&fit=crop&w=600&q=60");	
+}
+.pic-7 {
+	background-image: url("https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=527bc5d7e466efd5ce8a98c311728fbd&auto=format&fit=crop&w=600&q=60");	
+}
+.pic-8 {
+	background-image: url("https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1296a4419a6c84e28281db0a564071ef&auto=format&fit=crop&w=600&q=60");	
+}
+.pic-9 {
+	background-image: url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5a7430d7bd5676bc7b81f2b8bf8f6a75&auto=format&fit=crop&w=600&q=60");	
+}
+.pic-10 {
+	background-image: url("https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b766d45a668d79b326ec73aa5a57e068&auto=format&fit=crop&w=600&q=60");	
+}
+[class^="pic"] {
+	height: 200px;
+	background-size: cover;
+	position: relative;
+}
+.layer {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	line-height: 200px;
+	display: none;
+}
+i.fa {
+	margin: 0 20px;	
+}
+[class^="pic"]:hover .layer {
+	display: block;	
+}
+/* Zespol */
+.team {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.circle {
+	background-size: cover;
+	height: 150px;  
+	width: 150px;
+	border: solid;
+	color: #ccc;
+	border-radius: 50%;
+	margin: 5px auto;
+	font-size: 100px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+.circle .layer {
+	background: rgba(0,0,0,.4);
+	height: 100%;  
+	width: 100%;
+	position: absolute;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	display: none;
+	line-height: 150px;
+}
+[class^="circle"]:hover .layer {
+	display: inline;
+}
+/* Sekcja z obrazkiem */
+.bonus {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.bonus:hover {
+	background: rgb(0,0,0,.4);	
+}
+.bonus:hover h1 {
+	color: white;	
+}
+.bonus:hover p {
+	color: white;	
+}
+.bonus > .container > .row > .col-4 {
+	display: inline-block;
+	height: 450px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	left: 5px;
+}
+.bonus > .container > .row > .col-8 {
+	overflow: auto;
+}
+.bonus h1 {
+	text-align: center;	
+}
+
+/* Kilka liczb */
+
+.numbers {
+	text-align: center;	
+}
+.numbers > .container > .row > .col-3 > h1 {
+	font-size: 35px;
+}
+.numbers p {
+	color: #0097e6;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+/* Stopka */
+.footer {
+	background-color: #4b4b4b;	
+	color: #f5f6fa;
+}
+.footer h1 {
+	font-size: 22px;
+	text-align: center;
+	overflow: visible;
+	text-transform: uppercase;	
+}
+.footer h1::after{
+  content: "-----------";
+  letter-spacing:-2px;
+}
+.footer .media .icons {
+	text-align: center;	
+	font-size: 30px;
+	letter-spacing: 4px; 
+}
+.footer .fab {
+	background: #0097e6;
+	width: 40px;
+	height: 35px;
+}
+.footer .fab:hover {
+	transform: scale(1.2);	
+}
+/* Dolny pasek */
+.end p {
+	text-align: center;
+	color: white;
+	padding-top: 30px;
+	position: relative;
+	bottom: 45%;
+}
+.end .block {
+	background-color: #3d3d3d;
+	height: 60px;
+	width: 100%;
+	display: inline-block;
+}
+/*---------------------------
+        MEDIA QUERIES      
+-----------------------------*/
+
+@media (max-width: 1200px) {
+	* {
+		box-sizing: border-box;
+	}
+	.container {
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.row:before,
+	.row:after {
+		content:"";
+		display: table ;
+		clear: both;
+	 }
+	 [class*="col-"] {
+		width: 100%;
+		padding: 0;
+		float:left;
+	}
+	.numbers > .container > .row > .col-3 > h1 {
+	font-size: 35px;
+	padding: 0;
+}
+/* For tablets: */
+@media (max-width: 767px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    [class^="pic"]:active .layer {
+    	display: block;
+	}
+	.icon {
+		margin: 7% auto;	
+	}
+	header {
+		height: 20%;
+		text-align: center;
+	}
+}
+/* For desktop: */
+@media (min-width: 768px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
